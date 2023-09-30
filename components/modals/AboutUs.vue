@@ -56,29 +56,30 @@ export default {
   watch: {
     $route() {
       if (this.$route.hash.includes("#about_us")) {
-        gsap.from(".about", {
-          y: "100%",
-          opacity: 0,
-          duration: 2,
-          stagger: 0.1,
-          ease: "power2.out",
-        });
         gsap.from(".chars", {
-          y: "100%",
-          opacity: 0,
-          duration: 2,
-          stagger: 0.1,
-          ease: "power2.out",
+          y: '100%',
+        opacity: 0,
+        duration: 2,
+        stagger: 0.1,
+        ease: 'power2.out',
+        });
+        gsap.from(".about", {
+          y: '100%',
+        opacity: 0,
+        delay:1,
+        duration: 2,
+        stagger: 0.1,
+        ease: 'power1.out',
         });
       }
 
       
       gsap.fromTo(".text-bar-list",{opacity:0,y:"50vh"},{y:0,opacity:1,duration:2,stagger:0.3})
-      gsap.fromTo(
-        ".text__first-bg",
-        {  },
-        {  duration: 2, delay: 1.5 }
-      );
+      // gsap.fromTo(
+      //   ".text__first-bg",
+      //   { scaleX: 1 },
+      //   { scaleX: 0, duration: 2 }
+      // );
     },
   },
   data() {
