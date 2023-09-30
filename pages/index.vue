@@ -4,28 +4,27 @@
       <div class="section section1" id="section1">
         <Main />
       </div>
-      <div class="section" id="section2">
+      <div class="section" id="section2" v-show="$route.hash.includes(`about_us`)">
         <MainAboutUs />
       </div>
-      <div class="section" id="section3">
+      <div class="section" id="section3" v-show="$route.hash.includes(`features`)">
         <MainFeatures />
       </div>
-      <div class="section" id="section4">
+      <div class="section" id="section4" v-show="$route.hash.includes(`team`)">
         <MainTeam />
       </div>
-      <div class="section" id="section5">
+      <div class="section" id="section5" v-show="$route.hash.includes(`services`)">
         <MainServices />
       </div>
-      <div class="section" id="section6">
+      <div class="section" id="section6" v-show="$route.hash.includes(`drivers`)">
         <MainDrivers />
       </div>
-      <div class="section" id="section7">
+      <div class="section" id="section7" v-show="$route.hash.includes(`contacts`)">
         <MainContacts />
       </div>
     </div>
   </div>
 </template>
-
 <script>
 import ScrollEffect from "~/utils/ScrollEffect.js";
 export default {
