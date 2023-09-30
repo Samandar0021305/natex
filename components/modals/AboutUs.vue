@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import gsap from "gsap";
+import {gsap} from "gsap";
 import { srt1, str2, str3 } from "../../utils/ScrollEffect";
 export default {
   props: ["isDrawerOpen"],

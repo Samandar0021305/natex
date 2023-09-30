@@ -81,7 +81,7 @@
 </template>
 
 <script>
-import gsap from "gsap";
+import {gsap} from "gsap";
 import { features1, features2 } from "../../utils/ScrollEffect";
 export default {
   props: ["isDrawerOpen", "toggleDrawer"],

@@ -766,7 +766,7 @@
 </template>
 
 <script>
-import gsap from "gsap";
+import {gsap} from "gsap";
 import { team1, team2 } from "../../utils/ScrollEffect";
 export default {
   props: ["isDrawerOpen", "toggleDrawer"],
