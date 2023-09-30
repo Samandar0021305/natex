@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,800;1,100;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,800;1,100;1,200;1,300&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 0em;
+}
+
+*::-webkit-scrollbar {
+  width: 0em;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 3s;
+}
+
+@font-face {
+  font-family: "feature mono";
+  src: url("/fonts/feature_mono/FeatureMono-Medium.ttf") format("truetype"),
+    url("/fonts/feature_mono/FeatureMono-Medium.ttf") format("woff");
+}
+
+.swiper-pagination-bullet {
+  height: 30px !important;
+  width: 60px !important;
+  transition: all 0.3s ease-in-out !important;
+  background: transparent !important;
+  position: relative;
+  font-size: 18px !important;
+  font-family: "Feature Mono", sans-serif !important;
+}
+.swiper-pagination-bullet::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 24px;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease-in-out !important;
+}
+.swiper-pagination-bullet-active {
+  width: 150px !important;
+}
+.swiper-pagination-bullet-active::before {
+  width: 120px;
+  background-color: #3a3c3d;
+}
+.swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 24px;
+  width: 120px;
+  height: 2px;
+  background-color: white;
+  animation: line 5s linear 1;
+}
+
+@keyframes line {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 120px;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .swiper-pagination-bullet-active::before{
+    width: 90px;
+  }  
+  .swiper-pagination-bullet-active{
+    width: 120px !important;
+  }
+
+  .swiper-pagination-bullet-active::after{
+    width: 90px;
+  }
+  @keyframes line {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 90px;
+    }
+  }
+}
+
+.text-blur{
+  background:rgb(0, 0, 0, .1);
+  backdrop-filter: blur(10px);
+  padding: 8px 16px !important;
+  margin: 0 -16px !important;
+  border-radius: 6px;
+}
