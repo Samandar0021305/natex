@@ -71,7 +71,7 @@ export default {
         stagger: 0.1,
         ease: 'power1.out',
       });
-      gsap.fromTo(".",{opacity:0,y:"50vh"},{y:0,opacity:1,duration:2,stagger:0.3})
+      gsap.fromTo(".text-bar-list",{opacity:0,y:"50vh"},{y:0,opacity:1,duration:2,stagger:0.3})
 
       // gsap.fromTo(
       //   ".text__first-bg",

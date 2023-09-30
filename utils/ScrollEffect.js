@@ -32,12 +32,13 @@ export default function ScrollEffect() {
 
       onLeave: function (index, nextIndex, direction) {
         const sections = [
-          "section2",
-          "section3",
-          "section4",
           "section5",
           "section6",
           "section7",
+          "section2",
+          "section3",
+          "section4",
+          
         ];
 
         const startIndexes = [1, 2, 3, 4, 5, 6];
