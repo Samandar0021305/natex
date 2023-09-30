@@ -89,10 +89,9 @@ export default {
       }
       );
  
-      const tl = gsap.timeline();
       const footerItem = document.querySelectorAll(".footer--item");
       const newLi = document.querySelectorAll(".new-li");
-      tl.fromTo(
+      gsap.fromTo(
         footerItem,
           {
             y: "-100px",

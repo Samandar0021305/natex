@@ -74,8 +74,7 @@ export default {
 
       
       gsap.fromTo(".text-bar-list",{opacity:0,y:"50vh"},{y:0,opacity:1,duration:2,stagger:0.3})
-      const tl = gsap.timeline();
-      tl.fromTo(
+      gsap.fromTo(
         ".text__first-bg",
         { scaleX: 1 },
         { scaleX: 0, duration: 2, delay: 1.5 }

@@ -25,7 +25,6 @@ export default {
   watch: {
     $route() {
       if (this.$route.hash.includes("#features")) {
-        let tl = gsap.timeline();
 
         const textBarList = document.querySelectorAll(".text-bar");
         const textList = document.querySelectorAll(".text");
@@ -36,7 +35,7 @@ export default {
           ease: "linear",
         })
 
-        tl.fromTo(
+        gsap.fromTo(
           textBarList,
           {
             y: "-100px",

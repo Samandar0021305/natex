@@ -127,7 +127,6 @@ export default {
   watch:{
    $route(){
     if(this.$route.hash.includes("#services")){
-      let tl = gsap.timeline();
      gsap.from(".flex-card",{
         y: '100%',
         opacity: 0,
