@@ -11,7 +11,7 @@
       />
       <div class="content_info transform-effect">
       
-       <ModalsAboutUs :isDrawerOpen="true" />
+       <ModalsAboutUs :toggleDrawer="true"  :isDrawerOpen="true" />
       </div>
       
     
