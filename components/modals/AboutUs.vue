@@ -5,10 +5,10 @@
         <li class="flex justify-between list-items-li">
           <div>
             <p class="top-content">
-              <span v-for="(c, i) in srt1" class="chars" :key="i">{{ c }}</span>
+              <span v-for="(c, i) in srt1" class="chars-about" :key="i">{{ c }}</span>
             </p>
             <p class="bottom-content">
-              <span v-for="(b, l) in str2" class="about" :key="l">{{ b }}</span>
+              <span v-for="(b, l) in str2" class="about-bottom" :key="l">{{ b }}</span>
             </p>
           </div>
         </li>
@@ -49,38 +49,36 @@
 </template>
 
 <script>
-import {gsap} from "gsap";
+import { gsap } from "gsap";
 import { srt1, str2, str3 } from "../../utils/ScrollEffect";
 export default {
   props: ["isDrawerOpen"],
   watch: {
     $route() {
       if (this.$route.hash.includes("#about_us")) {
-        gsap.from(".chars", {
-          y: '100%',
+        gsap.from(".chars-about",{
+        y: '100%',
         opacity: 0,
         duration: 2,
         stagger: 0.1,
         ease: 'power2.out',
-        });
-        gsap.from(".about", {
-          y: '100%',
+      });
+      gsap.from(".about-bottom",{
+        y: '100%',
         opacity: 0,
         delay:1,
         duration: 2,
         stagger: 0.1,
         ease: 'power1.out',
-        });
-      }
-
-      
+      });
       gsap.fromTo(".text-bar-list",{opacity:0,y:"50vh"},{y:0,opacity:1,duration:2,stagger:0.3})
+
       // gsap.fromTo(
       //   ".text__first-bg",
       //   { scaleX: 1 },
       //   { scaleX: 0, duration: 2 }
       // );
-    },
+    }},
   },
   data() {
     return { srt1, str2, str3 };
