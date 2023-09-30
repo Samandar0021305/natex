@@ -5,6 +5,7 @@
         <Main />
       </div>
       <div class="section" id="section2">
+        <MainDrivers />
         <MainAboutUs />
       </div>
       <div class="section" id="section3">
@@ -17,7 +18,7 @@
         <MainServices />
       </div>
       <div class="section" id="section6">
-        <MainDrivers />
+        <MainAboutUs />
       </div>
       <div class="section" id="section7">
         <MainContacts />
