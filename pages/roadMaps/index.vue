@@ -1,7 +1,7 @@
 <template>
-  <div class="mx-auto">
+  <div class="mx-auto ">
     <section
-      class="main-section flex flex-col justify-center align-middle relative overflow-hidden"
+      class="main-section pb-[50px] flex flex-col justify-center align-middle relative overflow-hidden"
     >
     <AnimatedCustom /> 
     <div class="animate__fadeIn animate__animated">

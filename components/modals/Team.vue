@@ -4,8 +4,8 @@
 
     <div
       class="menu animate__animated animate__fadeIn"
-      :class="{ show: isDrawerOpen }"
       ref="menu"
+      :class="{ show: isDrawerOpen }"
     >
       <ul class="list-items-ul">
         <li class="flex justify-between w-[100%] list-items-li">
@@ -22,371 +22,26 @@
             </p>
           </div>
         </li>
-        <AnimatedSlider>
-          <template v-if="viewPort.desctop">
-            <swiper-slide slot="slider">
-              <div class="flex-card-container">
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/nursulton.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Nursulton Abdukaimov
-                      </p>
-                      <p class="position-job">CEO</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/toxir.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Tokhir Jumanazarov
-                      </p>
-                      <p class="position-job">CTO</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/abdulaziz.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Abdulaziz Abdukodiriy
-                      </p>
-                      <p class="position-job">NFT Creator</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/allanazar.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Allanazar Rakhimov
-                      </p>
-                      <p class="position-job">Header of PR</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/ekaterina.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Ekaterina Selionova
-                      </p>
-                      <p class="position-job">Chief Branding Specialist</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/jamshid.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Jamshid Vakhabov
-                      </p>
-                      <p class="position-job">NFT Designer</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </swiper-slide>
-            <swiper-slide slot="slider">
-              <div class="flex-card-container">
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/nursulton.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Nursulton Abdukaimov
-                      </p>
-                      <p class="position-job">CEO</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/toxir.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Tokhir Jumanazarov
-                      </p>
-                      <p class="position-job">CTO</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/abdulaziz.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Abdulaziz Abdukodiriy
-                      </p>
-                      <p class="position-job">NFT Creator</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/allanazar.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Allanazar Rakhimov
-                      </p>
-                      <p class="position-job">Header of PR</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/ekaterina.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Ekaterina Selionova
-                      </p>
-                      <p class="position-job">Chief Branding Specialist</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/jamshid.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Jamshid Vakhabov
-                      </p>
-                      <p class="position-job">NFT Designer</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </swiper-slide>
-          </template>
 
-          <template v-else-if="viewPort.laptop">
-            <swiper-slide slot="slider">
+        <template v-if="viewPort.desctop">
+          <div>
+            <div
+              class="slider-hide"
+              v-for="(item, index) in teamListDesctop"
+              :key="index"
+              :class="{
+                prev: item.id == prev - 1,
+                next: item.id == prev + 1,
+                current: item.id == prev,
+              }"
+            >
               <div class="flex-card-container">
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/nursulton.svg" />
+                <div
+                  class="flex-card team-card"
+                  v-for="el in item.list"
+                  :key="el.id"
+                >
+                  <img :src="require(`@/assets/images/team/${el.image}`)" />
                   <div class="w-[100%]">
                     <div class="socials">
                       <img
@@ -408,105 +63,35 @@
                     </div>
                     <div>
                       <p class="top-content name-n text-center">
-                        Nursulton Abdukaimov
+                        {{ el.name }}
                       </p>
-                      <p class="position-job">CEO</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/toxir.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Tokhir Jumanazarov
-                      </p>
-                      <p class="position-job">CTO</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/abdulaziz.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Abdulaziz Abdukodiriy
-                      </p>
-                      <p class="position-job">NFT Creator</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/allanazar.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Allanazar Rakhimov
-                      </p>
-                      <p class="position-job">Header of PR</p>
+                      <p class="position-job">{{ el.position }}</p>
                     </div>
                   </div>
                 </div>
               </div>
-            </swiper-slide>
-            <!-- <swiper-slide slot="slider">
+            </div>
+          </div>
+        </template>
+        <template v-else-if="viewPort.laptop">
+          <div>
+            <div
+              class="slider-hide"
+              v-for="(item, index) in teamListLaptop"
+              :key="index"
+              :class="{
+                prev: item.id == prev - 1,
+                next: item.id == prev + 1,
+                current: item.id == prev,
+              }"
+            >
               <div class="flex-card-container">
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/nursulton.svg" />
+                <div
+                  class="flex-card team-card"
+                  v-for="el in item.list"
+                  :key="el.id"
+                >
+                  <img :src="require(`@/assets/images/team/${el.image}`)" />
                   <div class="w-[100%]">
                     <div class="socials">
                       <img
@@ -528,274 +113,133 @@
                     </div>
                     <div>
                       <p class="top-content name-n text-center">
-                        Nursulton Abdukaimov
+                        {{ el.name }}
                       </p>
-                      <p class="position-job">CEO</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/toxir.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Tokhir Jumanazarov
-                      </p>
-                      <p class="position-job">CTO</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/abdulaziz.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Abdulaziz Abdukodiriy
-                      </p>
-                      <p class="position-job">NFT Creator</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/allanazar.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Allanazar Rakhimov
-                      </p>
-                      <p class="position-job">Header of PR</p>
+                      <p class="position-job">{{ el.position }}</p>
                     </div>
                   </div>
                 </div>
               </div>
-            </swiper-slide> -->
-          </template>
+            </div>
+          </div>
+        </template>
 
-          <template v-else-if="viewPort.mobile">
-            <swiper-slide slot="slider">
-              <div class="flex-card-container">
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/nursulton.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Nursulton Abdukaimov
-                      </p>
-                      <p class="position-job">CEO</p>
-                    </div>
-                  </div>
-                </div>
-              </div></swiper-slide
+        <template v-else-if="viewPort.mobile">
+          <div class="flex-card-container">
+            <div
+              class="flex-card team-card slider-hide"
+              v-for="item in teamList"
+              :key="item.id"
+              :class="{
+                prev: item.id == prev - 1,
+                next: item.id == prev + 1,
+                current: item.id == prev,
+              }"
             >
-            <swiper-slide slot="slider">
-              <div class="flex-card-container">
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/toxir.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Tokhir Jumanazarov
-                      </p>
-                      <p class="position-job">CTO</p>
-                    </div>
-                  </div>
+              <img :src="require(`@/assets/images/team/${item.image}`)" />
+              <div class="w-[100%]">
+                <div class="socials">
+                  <img
+                    src="@/assets/images/social_media/telegram_outline.svg"
+                    alt="telegram"
+                  />
+                  <img
+                    src="@/assets/images/social_media/discord_outline.svg"
+                    alt="telegram"
+                  />
+                  <img
+                    src="@/assets/images/social_media/linkedin_outline.svg"
+                    alt="telegram"
+                  />
+                  <img
+                    src="@/assets/images/social_media/instagram_outline.svg"
+                    alt="telegram"
+                  />
                 </div>
-              </div></swiper-slide
-            >
-            <swiper-slide slot="slider">
-              <div class="flex-card-container">
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/abdulaziz.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Abdulaziz Abdukodiriy
-                      </p>
-                      <p class="position-job">NFT Creator</p>
-                    </div>
-                  </div>
-                </div>
-              </div></swiper-slide
-            >
-            <swiper-slide slot="slider">
-              <div class="flex-card-container">
-                <div class="flex-card team-card">
-                  <img src="@/assets/images/team/allanazar.svg" />
-                  <div class="w-[100%]">
-                    <div class="socials">
-                      <img
-                        src="@/assets/images/social_media/telegram_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/discord_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/linkedin_outline.svg"
-                        alt="telegram"
-                      />
-                      <img
-                        src="@/assets/images/social_media/instagram_outline.svg"
-                        alt="telegram"
-                      />
-                    </div>
-                    <div>
-                      <p class="top-content name-n text-center">
-                        Allanazar Rakhimov
-                      </p>
-                      <p class="position-job">Header of PR</p>
-                    </div>
-                  </div>
+                <div>
+                  <p class="top-content name-n text-center">
+                    {{ item.name }}
+                  </p>
+                  <p class="position-job">{{ item.position }}</p>
                 </div>
               </div>
-            </swiper-slide>
-          </template>
-        </AnimatedSlider>
+            </div>
+          </div>
+        </template>
+        <div class="flex justify-center items-center">
+          <p @click="prevFunc">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 320 512"
+            >
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+              />
+            </svg>
+          </p>
+          <p style="margin-left: 20px" @click="nextFunc">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 320 512"
+            >
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+              />
+            </svg>
+          </p>
+        </div>
       </ul>
     </div>
   </div>
 </template>
 
 <script>
-import {gsap} from "gsap";
+import gsap from "gsap";
 import { team1, team2 } from "../../utils/ScrollEffect";
 export default {
   props: ["isDrawerOpen", "toggleDrawer"],
   watch: {
     $route() {
       if (this.$route.hash.includes("#team")) {
+        gsap.fromTo(
+          ".team-subtitle",
+          {
+            y: "100%",
+            autoAlpha: 0,
+          },
+          {
+            y: 0,
+            autoAlpha: 1,
+            delay: 1,
+            duration: 1.8,
+            stagger: 0.1,
+            ease: "power1.out",
+          }
+        );
         gsap.from(".team-title", {
           y: "100%",
-          opacity: 0,
+          autoAlpha: 0,
           duration: 2,
           stagger: 0.1,
           ease: "power2.out",
         });
+        gsap.fromTo(
+          ".team-card",
+          {
+            autoAlpha: 0,
+            y: -100,
+            x: -50,
+          },
+          {
+            autoAlpha: 1,
+            y: 0,
+            x: 0,
+            stagger: 0.3,
+          }
+        );
       }
-      gsap.fromTo(
-        ".team-subtitle",
-        {
-          y: "100%",
-          autoAlpha: 0,
-        },
-        {
-          y: 0,
-          autoAlpha: 1,
-          delay: 1,
-          duration: 1.8,
-          stagger: 0.1,
-          ease: "power1.out",
-        }
-      );
     },
   },
   data() {
@@ -807,6 +251,153 @@ export default {
         laptop: false,
         mobile: false,
       },
+      prev: 1,
+      teamListDesctop: [
+        {
+          id: 1,
+          list: [
+            {
+              id: 1,
+              image: "nursulton.svg",
+              name: "Nursulton Abdukaimov",
+              position: "CEO",
+            },
+            {
+              id: 2,
+              image: "toxir.svg",
+              name: "Tokhir Jumanazarov",
+              position: "CTO",
+            },
+            {
+              id: 3,
+              image: "abdulaziz.svg",
+              name: "Abdulaziz Abdukodiriy",
+              position: "NFT Creator",
+            },
+            {
+              id: 4,
+              image: "allanazar.svg",
+              name: "Allanazar Rakhimov",
+              position: "Header of PR",
+            },
+            {
+              id: 5,
+              image: "abdulaziz.svg",
+              name: "Abdulaziz Abdukodiriy",
+              position: "NFT Creator",
+            },
+            {
+              id: 6,
+              image: "allanazar.svg",
+              name: "Allanazar Rakhimov",
+              position: "Header of PR",
+            },
+          ],
+        },
+        {
+          id: 2,
+          list: [
+            {
+              id: 5,
+              image: "abdulaziz.svg",
+              name: "Abdulaziz Abdukodiriy",
+              position: "NFT Creator",
+            },
+            {
+              id: 6,
+              image: "allanazar.svg",
+              name: "Allanazar Rakhimov",
+              position: "Header of PR",
+            },
+          ],
+        },
+      ],
+      teamListLaptop: [
+        {
+          id: 1,
+          list: [
+            {
+              id: 1,
+              image: "nursulton.svg",
+              name: "Nursulton Abdukaimov",
+              position: "CEO",
+            },
+            {
+              id: 2,
+              image: "toxir.svg",
+              name: "Tokhir Jumanazarov",
+              position: "CTO",
+            },
+            {
+              id: 3,
+              image: "abdulaziz.svg",
+              name: "Abdulaziz Abdukodiriy",
+              position: "NFT Creator",
+            },
+            {
+              id: 4,
+              image: "allanazar.svg",
+              name: "Allanazar Rakhimov",
+              position: "Header of PR",
+            },
+          ],
+        },
+        {
+          id: 2,
+          list: [
+            {
+              id: 1,
+              image: "nursulton.svg",
+              name: "Nursulton Abdukaimov",
+              position: "CEO",
+            },
+            {
+              id: 2,
+              image: "toxir.svg",
+              name: "Tokhir Jumanazarov",
+              position: "CTO",
+            },
+            {
+              id: 3,
+              image: "abdulaziz.svg",
+              name: "Abdulaziz Abdukodiriy",
+              position: "NFT Creator",
+            },
+            {
+              id: 4,
+              image: "allanazar.svg",
+              name: "Allanazar Rakhimov",
+              position: "Header of PR",
+            },
+          ],
+        },
+      ],
+      teamList: [
+        {
+          id: 1,
+          image: "nursulton.svg",
+          name: "Nursulton Abdukaimov",
+          position: "CEO",
+        },
+        {
+          id: 2,
+          image: "toxir.svg",
+          name: "Tokhir Jumanazarov",
+          position: "CTO",
+        },
+        {
+          id: 3,
+          image: "abdulaziz.svg",
+          name: "Abdulaziz Abdukodiriy",
+          position: "NFT Creator",
+        },
+        {
+          id: 4,
+          image: "allanazar.svg",
+          name: "Allanazar Rakhimov",
+          position: "Header of PR",
+        },
+      ],
     };
   },
   mounted() {
@@ -834,11 +425,68 @@ export default {
         this.viewPort.mobile = true;
       }
     },
+    prevFunc() {
+      let list = [];
+
+      if (this.viewPort.mobile) {
+        list = this.teamList;
+      } else if (this.viewPort.laptop) {
+        list = this.teamListLaptop;
+      } else {
+        list = this.teamListDesctop;
+      }
+
+      if (this.prev === 1) {
+        this.prev = list.length;
+      } else if (this.prev > 1) {
+        this.prev = this.prev - 1;
+      }
+    },
+    nextFunc() {
+      let list = [];
+
+      if (this.viewPort.mobile) {
+        list = this.teamList;
+      } else if (this.viewPort.laptop) {
+        list = this.teamListLaptop;
+      } else {
+        list = this.teamListDesctop;
+      }
+
+      if (this.prev === list.length) {
+        this.prev = 1;
+      } else {
+        this.prev += 1;
+      }
+    },
   },
 };
 </script>
 
 <style scoped>
+svg {
+  font-size: 30px;
+}
+svg path {
+  fill: white;
+}
+
+.slider-hide {
+  display: none;
+}
+.slider-hide.current {
+  display: flex;
+  animation: anime 0.5s ease-in-out;
+}
+@keyframes anime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .top-content {
   font-family: "Feature Mono";
   letter-spacing: 2px;
@@ -950,6 +598,7 @@ export default {
   max-width: 800px;
   width: 70%;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .list-items-li {
@@ -975,13 +624,12 @@ export default {
 
 .flex-card-container {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
 }
 
 .flex-card {
-  flex: 0 1 calc(33.33% - 10px);
   margin-bottom: 10px;
   padding: 0px;
 }
@@ -1029,11 +677,13 @@ header {
   .bottom-content {
     font-size: 17px;
   }
+  .flex-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .flex-card {
-    flex: 0 1 calc(50% - 10px);
     margin-bottom: 10px;
     padding: 0px;
-    width: 45%;
+    width: 80%;
   }
   .flex-card-container {
     height: 500px;
@@ -1062,10 +712,10 @@ header {
     margin: 0;
   }
   .flex-card-container {
+    grid-template-columns: repeat(1, 1fr);
     height: auto !important;
   }
   .flex-card {
-    flex: 0 1 calc(80% - 10px);
     margin: 0 auto;
   }
   .content {
@@ -1075,6 +725,9 @@ header {
     flex-direction: column;
     margin: 0 auto;
   }
+  .slider-hide.current{
+    display: block;
+  }
 }
 
 @media (max-width: 678px) {
@@ -1083,6 +736,7 @@ header {
   }
   .menu ul {
     width: 70%;
+    margin-top: 90px;
   }
   .flex-card {
     width: 100%;

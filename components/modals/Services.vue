@@ -59,56 +59,29 @@
           </div>
         </div>
 
-
-        <div class="slider-card">
-          <AnimatedSliderService :viewCount="1" :count="3">
-          <swiper-slide slot="slider">
-          
-              <div class="flex-card">
-            <img src="@/assets/images/main/nft_services.svg" />
-            <div class="w-[100%] topCard">
+            <div class="slider-card">
               <div>
-                <p class="top-content name-n text-center">CENTAUR</p>
-                <p class="position-job">
-                  An NFT representing 3 driver license keys, for diversification
-                  of income.
+                <div class="flex-card show" v-for="item in servicesCards" :key="item.id" :class="{prev: item.id == prev-1, next: item.id == prev+1, current: item.id == prev }" >
+                <img src="@/assets/images/main/nft_services.svg" />
+                  <div class="w-[100%] topCard">
+                    <div>
+                      <p class="top-content name-n text-center">{{ item.title }}</p>
+                      <p class="position-job">
+                        {{ item.text }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center items-center pr-[35px]">
+                <p @click="prevFunc">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>  
+                </p>
+                <p style="margin-left: 20px;" @click="nextFunc">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
                 </p>
               </div>
             </div>
-          </div>
-          </swiper-slide>
-          <swiper-slide slot="slider">
-          <div class="flex-card">
-            <img src="@/assets/images/main/nft_services.svg" />
-            <div class="w-[100%] topCard">
-              <div>
-                <p class="top-content name-n text-center">CENTAUR</p>
-                <p class="position-job">
-                  An NFT representing 3 driver license keys, for diversification
-                  of income.
-                
-                </p>
-              </div>
-            </div>
-          </div>
-          </swiper-slide>
-          <swiper-slide slot="slider">
-          <div class="flex-card">
-            <img src="@/assets/images/main/nft_services.svg" />
-            <div class="w-[100%] topCard">
-              <div>
-                <p class="top-content name-n text-center">CENTAUR</p>
-                <p class="position-job">
-                  An NFT representing 3 driver license keys, for diversification
-                  of income.
-                </p>
-              </div>
-            </div>
-          </div>
-          </swiper-slide>
-          
-        </AnimatedSliderService>
-        </div>
 
         <button class="button-11 self-center">
              Load More
@@ -122,6 +95,7 @@
 <script>
  import {gsap} from "gsap"
 import {services1 , services2 } from "../../utils/ScrollEffect"
+import {servicesCards} from "../../utils/cards"
 export default {
   props: ["isDrawerOpen"],
   watch:{
@@ -147,8 +121,7 @@ export default {
       {
         y:100,
         opacity:0
-      },  
-      {
+      },  {
         y: 0,
         opacity: 1,
         duration: 2,
@@ -158,15 +131,37 @@ export default {
       gsap.fromTo(".text__first-bg-servise",{scaleX:1},{scaleX:0,duration:2,delay:2})
     }}
   },
+  methods:{
+    prevFunc(){
+      if(this.prev === 1){
+       this.prev = servicesCards.length;
+      }else if(this.prev > 1){
+        this.prev = this.prev - 1;
+      }
+    },
+    nextFunc(){
+      if(this.prev === servicesCards.length){
+        this.prev = 1
+      }else{
+        this.prev +=1
+      }
+    },
+  },
   data(){
-    return {services1 , services2}
-  }
+    return {services1 , services2,prev:1,servicesCards}
+  },
 };
 </script>
 
 <style scoped>
 .slider-card{
   display: none;
+}
+svg{
+  font-size: 30px;
+}
+svg path{
+  fill: white;
 }
 .text__first-bg-servise{
   display: flex;
@@ -293,6 +288,8 @@ export default {
   text-align: justify;
 }
 
+
+
 .list-items-li > strong {
   font-size: 17px;
 }
@@ -316,7 +313,20 @@ export default {
   margin-bottom: 10px;
   padding: 0px;
 }
-
+.flex-card.show{
+  display: none;
+}
+.flex-card.show.current{
+  display: block;
+  animation: anime .5s ease-in-out;
+}
+ @keyframes anime {
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+ }
 header {
   display: none;
 }
@@ -392,6 +402,7 @@ header {
   }
   .slider-card{
     display: block;
+    /* align-items: center; */
   }
   .flex-card{
     width: 100%;
@@ -419,9 +430,15 @@ header {
     width: 90%;
     margin: 0% auto;
   }
+  .topCard{
+    width: 100% !important;
+  }
   .list-items-ul {
     display: flex;
     flex-direction: column;
+  }
+  .position-job{
+    width: 100%;
   }
   .flex-card-container {
     width: 100%;

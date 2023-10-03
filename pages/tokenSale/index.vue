@@ -1,5 +1,5 @@
 <template>
-  <div class="token_sale_wrapper">
+  <div class="token_sale_wrapper pb-[50px]">
     <div class="animate__fadeIn animate__animated top-navbar">
       <nuxt-link to="/"
       ><img

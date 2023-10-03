@@ -26,6 +26,6 @@ export default {};
 
 <style scoped>
 header {
-  z-index: 102 !important;
+  z-index: 120 !important;
 }
 </style>

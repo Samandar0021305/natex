@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto">
     <section
-      class="main-section flex flex-col justify-center align-middle relative overflow-hidden"
+      class="main-section pb-[50px] flex flex-col justify-center align-middle relative overflow-hidden"
     >
     <AnimatedCustom />
 
@@ -36,7 +36,7 @@
           and driving experience to the next level? By joining Natex you will:
         </p>
       </div>
-      <main class="mx-auto flex justify-between w-[80%]">
+      <main class="mx-auto flex justify-between w-[80%] mb-8">
         <div
           class="content-wrapper flex flex-col items-center"
         >

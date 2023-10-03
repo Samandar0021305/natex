@@ -1,7 +1,7 @@
-import gsap from 'gsap';
+
 <template>
   <div>
-       <div
+      <div
       class="menu"
       :class="{ show: isDrawerOpen }"
       ref="menu"
@@ -89,9 +89,10 @@ export default {
       }
       );
  
+      const tl = gsap.timeline();
       const footerItem = document.querySelectorAll(".footer--item");
       const newLi = document.querySelectorAll(".new-li");
-      gsap.fromTo(
+      tl.fromTo(
         footerItem,
           {
             y: "-100px",
@@ -317,26 +318,27 @@ header {
     width: 90%;
     margin: 0% auto;
   }
+  .menu.show{
+    margin-top: -80%;
+  }
 }
 
 @media (max-width: 472px) {
+  
   .bottom-content {
     font-size: 20px;
-    width: 100%;
+    width: 90%;
     line-height: 24px;
     margin-top: 5px;
+   
   }
 }
 
 @media  (max-width:350px) {
    .menu.show{
-    margin-top: -70% !important;
+    margin-top: -120% !important;
    padding-left: 10px; 
   }
-  .list-items-ul{
-    padding: 0;
-    margin: 0;
-    padding-right: 10px;
-  }
+  /*  */
 }
 </style>

@@ -69,7 +69,6 @@ export default {
         ease: 'power1.out',
       });
       gsap.fromTo(".li-color",{opacity:0,y:"50vh"},{y:0,opacity:1,duration:2,stagger:0.3})
-
     }}
   },
   data(){

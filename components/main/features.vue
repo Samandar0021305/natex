@@ -15,7 +15,7 @@
   </section>
 </template>
 <script>
-import {gsap} from "gsap";
+import gsap from "gsap";
 
 export default {
   async mounted() {
@@ -25,18 +25,15 @@ export default {
   watch: {
     $route() {
       if (this.$route.hash.includes("#features")) {
-
-        const textBarList = document.querySelectorAll(".text-bar");
-        const textList = document.querySelectorAll(".text");
         
-        gsap.from(textList, {
+        gsap.from(".text", {
           height: 0,
-          stagger: .5,
+          stagger: .4,
           ease: "linear",
         })
 
         gsap.fromTo(
-          textBarList,
+          ".text-bar",
           {
             y: "-100px",
             autoAlpha: 0,
@@ -45,7 +42,7 @@ export default {
             y: "0px",
             autoAlpha: 1,
             ease: "linear",
-            stagger: 0.2,
+            stagger: 0.25,
           }
         );
       }

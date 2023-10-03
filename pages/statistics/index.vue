@@ -1,10 +1,10 @@
 <template>
-  <div class="mx-auto">
+  <div class="mx-auto ">
     <section
-      class="main-section flex flex-col justify-center align-middle relative overflow-hidden"
+      class="main-section pb-[50px] flex flex-col justify-center align-middle relative overflow-hidden"
     >
     <AnimatedCustom />
-      <div class="animate__fadeIn animate__animated">
+      <div class="animate__fadeIn animate__animated header--boox">
         <nuxt-link to="/"
           ><img
             src="@/assets/images/main/go_back.svg"
@@ -225,6 +225,7 @@ export default {
         stagger:.4,
       })
   },
+ 
 };
 </script>
 
@@ -397,8 +398,10 @@ ul {
 }
 
 @media (max-width: 400px) {
-  .header {
+  header.header {
+    margin: 0 !important;
     margin-top: 30% !important;
+   padding: 0 !important; 
   }
 }
 </style>

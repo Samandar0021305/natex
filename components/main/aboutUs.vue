@@ -1,7 +1,7 @@
 <template>
   <section class="main-section flex w-[100%] relative flex-col" id="about-us" >
     <AnimatedCustom />
-        <Header class="mx-auto container px-3 transform-effect" />
+        <Header class="mx-auto container px-3 transform-effect header" />
     <div
       class="h-[100%] w-[100vw]  align-middle container mx-auto px-3 mt-[30px]  flex justify-between items-center"
     >
@@ -11,7 +11,7 @@
       />
       <div class="content_info transform-effect">
       
-       <ModalsAboutUs :toggleDrawer="true"  :isDrawerOpen="true" />
+       <ModalsAboutUs :isDrawerOpen="true" />
       </div>
       
     
@@ -125,5 +125,11 @@ export default {
   .bottom-content {
     font-size: 20px;
   }
+}
+
+@media screen and (max-width:400px) {
+   .header{
+     margin-top: -5px !important;
+   }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="main-pricing">
     <AnimatedCustom />
-    <section class="section">
+    <section class="section pb-[50px]">
       <div class="animate__fadeIn animate__animated top-navbar">
         <nuxt-link to="/"
           ><img
@@ -159,13 +159,11 @@ export default {
 
 <style scoped>
 .main-pricing {
-  background-image: url("@/assets/images/main/bg.svg");
   background-size: cover;
-  min-height: 100vh;
+  overflow: hidden;
 }
 .section {
-  min-height: 100vh;
-
+  min-height: 100%;
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -236,6 +234,9 @@ main {
   display: flex;
   justify-content: space-between;
   /* transition: 0.3s all ease; */
+}
+.section{
+  background-color: transparent !important;
 }
 .content-wrapper:hover .left,
 .content-wrapper:hover .right {

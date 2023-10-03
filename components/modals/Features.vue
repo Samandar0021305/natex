@@ -81,28 +81,40 @@
 </template>
 
 <script>
-import {gsap} from "gsap";
+import gsap from "gsap";
 import { features1, features2 } from "../../utils/ScrollEffect";
 export default {
   props: ["isDrawerOpen", "toggleDrawer"],
   watch: {
     $route() {
       if (this.$route.hash.includes("#features")) {
+        gsap.from(".features-subtitle", {
+            y: "100%",
+            opacity: 0,
+            duration: 2,
+            stagger: 0.1,
+            ease: "power2.out",
+          });
+
         gsap.from(".features-title", {
           y: "100%",
-          opacity: 0,
+          autoAlpha: 0,
           duration: 2,
           stagger: 0.1,
           ease: "power2.out",
         });
       }
-      gsap.from(".features-subtitle", {
-        y: "100%",
-        opacity: 0,
-        duration: 2,
-        stagger: 0.1,
-        ease: "power1.out",
-      });
+      // gsap.fromTo(".features-subtitle",{
+      //   scale: 0,
+      //   autoAlpha: 0,
+      // }, {
+      //   scale: 1,
+      //   autoAlpha: 1,
+      //   delay:1,
+      //   duration: 1.5,
+      //   stagger: 0.1,
+      //   ease: 'power1.out',
+      // });
     },
   },
   data() {
@@ -112,26 +124,6 @@ export default {
 </script>
 
 <style scoped>
-/* TEXT
-=========================== */
-
-.text strong,
-.text p {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  display: block;
-}
-.text strong {
-  height: 20px;
-}
-.text p {
-  height: 55px;
-}
-.text strong .text-bar,
-.text p .text-bar {
-  position: absolute;
-}
 
 .overlay {
   height: 100vh;
@@ -165,12 +157,11 @@ export default {
 
 .menu.show {
   transform: translateX(-100%);
-  z-index: 101; /* slide in from the right */
+  z-index: 101; 
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 200px 0;
 }
 
 .list-items-ul {
@@ -179,7 +170,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
   width: 65%;
   justify-content: flex-start;
 }
@@ -290,21 +280,13 @@ header {
     flex-direction: column;
     margin: 0 auto;
   }
-  .text{
-    height: 155px;
-  }
-  .text p {
-    height: 115px;
-  }
-  .menu.show {
-    padding: 90px 0;
-  }
+
   .list-items-ul {
     margin-left: 0;
   }
   .menu ul {
     width: 90%;
-    margin-top: 25px;
+    margin-top: 60px;
   }
   header {
     display: block;
@@ -319,6 +301,8 @@ header {
   }
   .p_info {
     font-size: 12px;
+    line-height: 150%;
   }
 }
+
 </style>

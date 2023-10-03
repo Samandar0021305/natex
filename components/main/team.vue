@@ -22,28 +22,9 @@
 </template>
 
 <script>
-import {gsap} from "gsap";
-
 export default {
   async mounted() {
     await this.$store.dispatch("handleSidebarMenu");
-  },
-  watch: {
-    $route() {
-      if (this.$route.hash.includes("#team")) {
-        gsap.fromTo(".team-card", {
-          autoAlpha:0,
-          y:-100,
-          x:-50,
-        },{
-          autoAlpha:1,
-          y:0,
-          x:0,
-          // duration:1,
-          stagger:.3,
-        })
-       }
-    },
   },
   data() {
     return {

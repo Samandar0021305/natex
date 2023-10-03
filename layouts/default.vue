@@ -25,6 +25,7 @@ export default {
       page_wrapper: null,
     };
   },
+  
   watch: {
     $route() {
       if (
@@ -86,7 +87,8 @@ export default {
     //   }
     // });
     // observer.observe(this.pageWrapper, { attributes: true });
-  },
+   this.$router.push("/#natex")
+   },
 };
 </script>
 <style scoped>
@@ -94,8 +96,8 @@ export default {
   background-image: url("@/assets/images/main/earth.svg");
   background-attachment: fixed;
   background-size: cover;
-  min-height: 100%;
-  overflow-x: scroll;
+  min-height: 100vh;
+  overflow-x: scroll !important;
 }
 
 .body-perspective {
@@ -108,11 +110,9 @@ export default {
 }
 
 .md-content {
-  min-height: 100vh;
   background: #1e1e1e;
-  /* perspective: 1000px; */
+  perspective: 1000px;
   transition: transform 0.5s;
-  overflow: scroll;
 }
 
 

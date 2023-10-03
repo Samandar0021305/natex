@@ -42,6 +42,9 @@ export default {
 
 .swiper-container {
   width: 800px;
+  transform: scale(0.9);
+  margin: -40px 0;
+  margin-left:-40px;
 }
 .pagination {
   width: 390px;
@@ -52,7 +55,7 @@ export default {
 }
 @media (max-width: 1200px) {
  .swiper-container {
-    width: calc(100vw - 233px - 144px);
+    width: calc(100vw - 377px);
   }
 }
 

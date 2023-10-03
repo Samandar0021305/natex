@@ -5,10 +5,10 @@
         <li class="flex justify-between list-items-li">
           <div>
             <p class="top-content">
-              <span v-for="(c, i) in srt1" class="chars-about" :key="i">{{ c }}</span>
+              <span v-for="(c, i) in srt1" class="chars" :key="i">{{ c }}</span>
             </p>
             <p class="bottom-content">
-              <span v-for="(b, l) in str2" class="about-bottom" :key="l">{{ b }}</span>
+              <span v-for="(b, l) in str2" class="about" :key="l">{{ b }}</span>
             </p>
           </div>
         </li>
@@ -49,36 +49,38 @@
 </template>
 
 <script>
-import { gsap } from "gsap";
+import gsap from "gsap";
 import { srt1, str2, str3 } from "../../utils/ScrollEffect";
 export default {
-  props: ["isDrawerOpen","toggleDrawer"],
+  props: ["isDrawerOpen"],
   watch: {
     $route() {
       if (this.$route.hash.includes("#about_us")) {
-        gsap.from(".chars-about",{
-        y: '100%',
-        opacity: 0,
-        duration: 2,
-        stagger: 0.1,
-        ease: 'power2.out',
-      });
-      gsap.from(".about-bottom",{
-        y: '100%',
-        opacity: 0,
-        delay:1,
-        duration: 2,
-        stagger: 0.1,
-        ease: 'power1.out',
-      });
-      gsap.fromTo(".text-bar-list",{opacity:0,y:"50vh"},{y:0,opacity:1,duration:2,stagger:0.3})
+        gsap.from(".about", {
+          y: "100%",
+          opacity: 0,
+          duration: 2,
+          stagger: 0.1,
+          ease: "power2.out",
+        });
+        gsap.from(".chars", {
+          y: "100%",
+          opacity: 0,
+          duration: 2,
+          stagger: 0.1,
+          ease: "power2.out",
+        });
+      }
 
+      
+      gsap.fromTo(".text-bar-list",{opacity:0,y:"50vh"},{y:0,opacity:1,duration:2,stagger:0.3})
+      
       gsap.fromTo(
         ".text__first-bg",
         { scaleX: 1 },
-        { scaleX: 0, duration: 2 }
+        { scaleX: 0, duration: 2, delay: 1.5 }
       );
-    }},
+    },
   },
   data() {
     return { srt1, str2, str3 };
@@ -179,7 +181,6 @@ export default {
 .top-content {
   font-family: "Feature Mono";
   letter-spacing: 2px;
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -191,7 +192,6 @@ export default {
 
 .bottom-content {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 550;
   font-size: 26px;
   line-height: 44px;
@@ -269,8 +269,17 @@ export default {
  /* / width: 100%; */
  margin: 0 !important;
  padding: 0 !important;
- font-size: 12px !important;
+ font-size: 10px !important;
  opacity: 1 !important;
 }
+}
+
+@media screen and (max-width:400px) {
+   .top-content{
+    font-size: 18px;
+   }
+   .bottom-content {
+    font-size: 24px;
+   }
 }
 </style>

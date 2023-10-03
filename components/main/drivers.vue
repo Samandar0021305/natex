@@ -11,7 +11,7 @@
         from="for_drivers"
       />
 
-      <ModalsMainDrivers  :isDrawerOpen="true" :toggleDrawer="true"  />
+      <ModalsMainDrivers :toggleDrawer="true" :isDrawerOpen="true" />
     </div>
   </section>
 </template>

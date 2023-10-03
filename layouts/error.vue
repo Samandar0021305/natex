@@ -128,6 +128,7 @@ export default {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
+  overflow: scroll;
 }
 
 .body-perspective {
@@ -144,6 +145,7 @@ export default {
   background: #212023;
   perspective: 1000px;
   transition: transform 0.5s;
+  
 }
 .sidebar-is-open .md-content:before {
   content: "";

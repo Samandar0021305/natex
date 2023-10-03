@@ -34,6 +34,7 @@ body::-webkit-scrollbar {
   position: relative;
   font-size: 18px !important;
   font-family: "Feature Mono", sans-serif !important;
+  outline:none !important;
 }
 .swiper-pagination-bullet::before {
   content: "";

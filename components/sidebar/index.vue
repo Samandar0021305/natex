@@ -16,44 +16,44 @@
     </div>
     <ul class="ul-element mt-20">
       <nuxt-link
-        to="/"
+        to="/#natex"
         class="hover:bg-third bg-third transition duration-300 ease-in-out"
-      >
-        <li class="hover:bg-third hover:text-white" @click="handleClick">
+        >
+        <li  class="hover:bg-third hover:text-white" @click="handleClick">
           HOME
         </li>
       </nuxt-link>
 
-      <nuxt-link to="/pricing">
-        <li class="hover:bg-third hover:text-white" @click="handleClick">
+      <nuxt-link  to="/pricing">
+        <li   class="hover:bg-third hover:text-white" @click="handleClick">
           PRICING
         </li>
       </nuxt-link>
 
       <nuxt-link to="/tokenSale">
-        <li class="hover:bg-third hover:text-white" @click="handleClick">
+        <li  class="hover:bg-third hover:text-white" @click="handleClick">
           TOKEN SALE
         </li>
       </nuxt-link>
 
       <nuxt-link to="/statistics">
-        <li class="hover:bg-third hover:text-white" @click="handleClick">
+        <li  class="hover:bg-third hover:text-white" @click="handleClick">
           STATISTICS
         </li>
       </nuxt-link>
 
       <nuxt-link to="/roadMaps">
-        <li class="hover:bg-third hover:text-white" @click="handleClick">
+        <li  class="hover:bg-third hover:text-white" @click="handleClick">
           ROADMAPS
         </li>
       </nuxt-link>
       <nuxt-link to="/riders">
-        <li class="hover:bg-third hover:text-white" @click="handleClick">
+        <li  class="hover:bg-third hover:text-white" @click="handleClick">
           FOR RIDERS
         </li>
       </nuxt-link>
       <nuxt-link to="/drivers">
-        <li class="hover:bg-third hover:text-white" @click="handleClick">
+        <li  class="hover:bg-third hover:text-white" @click="handleClick">
           FOR DRIVERS
         </li>
       </nuxt-link>
@@ -75,6 +75,12 @@ export default {
         container.classList.remove("sidebar-is-open");
       }
     },
+    isActive(param){
+       if(this.$route.path.includes(param)){
+         return true
+       }
+       return false
+    }
   },
 };
 </script>
@@ -83,7 +89,9 @@ export default {
   height: 100vh;
   overflow: hidden;
 }
-
+/* .SaidarActive{
+  background-color: ;
+} */
 .images-wrapper {
   position: absolute;
   left: 0;
@@ -116,5 +124,9 @@ li {
 
 li {
   color: gray;
+}
+.nuxt-link-exact-active > li{
+background-image: linear-gradient(135deg, #08aeea3b 0%, #0c111693 100%);
+color: white;
 }
 </style>

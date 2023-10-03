@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="pagepiling">
-      <div class="section section1" id="section1">
+      <div class="section section1" id="section1" v-show="$route.hash.includes(`natex`)">
         <Main />
       </div>
       <div class="section" id="section2" v-show="$route.hash.includes(`about_us`)">
@@ -25,11 +25,13 @@
     </div>
   </div>
 </template>
+
 <script>
 import ScrollEffect from "~/utils/ScrollEffect.js";
 export default {
   mounted() {
     ScrollEffect();
+
   },
 };
 </script>
@@ -53,10 +55,12 @@ body {
   opacity: 1;
   transition: opacity 0.8s ease-in-out;
   background-color: black !important;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .section.active {
   opacity: 1;
+  overflow:hidden;
 }
 .section1 {
   transition: all 0.8s ease-in-out !important;
