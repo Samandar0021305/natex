@@ -15,14 +15,14 @@
       />
     </div>
     <ul class="ul-element mt-20">
-      <nuxt-link
-        to="/#natex"
+      <span
+        @click="gotoHOme()"
         class="hover:bg-third bg-third transition duration-300 ease-in-out"
         >
         <li  class="hover:bg-third hover:text-white" @click="handleClick">
           HOME
         </li>
-      </nuxt-link>
+        </span>
 
       <nuxt-link  to="/pricing">
         <li   class="hover:bg-third hover:text-white" @click="handleClick">
@@ -75,11 +75,14 @@ export default {
         container.classList.remove("sidebar-is-open");
       }
 
+     
+    },
+    gotoHOme(){
       if(this.$route.hash.includes("#") && !this.$route.hash.includes("#natex")){
-        // this.$route.
-        // console.log(this.$route);
-        // this.$route.push("#natex")
-        window.location.reload()
+        location.reload()
+      }else{
+        this.$router.push("/#natex")
+
       }
     },
     isActive(param){
