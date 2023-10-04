@@ -1,7 +1,7 @@
 <template>
   <div class="token_sale_wrapper pb-[50px]">
-    <div class="animate__fadeIn animate__animated top-navbar">
-      <nuxt-link to="/"
+    <div class="animate__fadeIn animate__animated top-navbar header--boox">
+      <nuxt-link to="#natex"
       ><img
           src="@/assets/images/main/go_back.svg"
           alt="go back"
@@ -203,6 +203,16 @@ export default {
 
   .header {
     margin-top: 20px;
+  }
+}
+
+
+@media screen and (max-width:400px) {
+  .header--boox img{
+    left: 40px !important;
+    width: 35px;
+    height: 35px;
+    top: 3.2rem;
   }
 }
 </style>

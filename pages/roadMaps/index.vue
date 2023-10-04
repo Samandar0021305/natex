@@ -4,8 +4,8 @@
       class="main-section pb-[50px] flex flex-col justify-center align-middle relative overflow-hidden"
     >
     <AnimatedCustom /> 
-    <div class="animate__fadeIn animate__animated">
-        <nuxt-link to="/"
+    <div class="animate__fadeIn animate__animated header--boox" >
+        <nuxt-link to="#natex"
           ><img
             src="@/assets/images/main/go_back.svg"
             alt="go back"
@@ -155,6 +155,9 @@ export default {
   main {
     width: 95%;
   }
+  main img{
+    transform: scale(1.1);
+  }
 }
 
 @media (max-width: 568px) {
@@ -177,6 +180,16 @@ export default {
 
   header {
     margin-top: 20%;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+  .header--boox img{
+    left: 40px !important;
+    width: 35px;
+    height: 35px;
+    top: 3.2rem;
   }
 }
 </style>

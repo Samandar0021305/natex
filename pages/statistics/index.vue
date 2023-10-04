@@ -5,7 +5,7 @@
     >
     <AnimatedCustom />
       <div class="animate__fadeIn animate__animated header--boox">
-        <nuxt-link to="/"
+        <nuxt-link to="/#natex"
           ><img
             src="@/assets/images/main/go_back.svg"
             alt="go back"
@@ -377,11 +377,12 @@ ul {
 
 @media (max-width: 568px) {
   section.main-section{
-    padding: 100px;
+    padding-bottom: 100px;
   }
   .content-wrapper {
     margin-top: 10px;
     flex-direction: column;
+   width: 100%;
   }
   .right,
   .left {
@@ -405,6 +406,15 @@ ul {
     margin: 0 !important;
     margin-top: 30% !important;
    padding: 0 !important; 
+  }
+  .header--boox{
+    padding-right: 20px !important;
+  }
+  .header--boox img{
+    left: 40px !important;
+    width: 35px;
+    height: 35px;
+    top: 3.2rem;
   }
 }
 </style>

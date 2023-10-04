@@ -28,4 +28,12 @@ export default {};
 header {
   z-index: 120 !important;
 }
+
+@media screen and (max-width:420px) {
+   nav div a img{
+    width: 104px;
+    height: 19px;
+   }
+}
+
 </style>
