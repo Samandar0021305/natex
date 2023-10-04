@@ -5,7 +5,10 @@
       class="start_menu"
       :class="{ active: isLinkWrapperShown }"
     >
-      <span>MENU</span>
+      <!-- <span> -->
+        
+        <img src="../../assets/images/icon/footericon.svg" alt="">
+      <!-- </span> -->
     </button>
     <div class="links_wrapper" :class="{ active: isLinkWrapperShown }">
       <ul class="w-[45%]" id="menu">
@@ -187,21 +190,11 @@ export default {
   margin: 25px 0%;
 }
 
-button {
-  position: relative;
-  padding: 10px 25px;
-  background: rgba(255, 255, 255, 0.04);
-  width: 100px;
-  margin: 0 auto;
-  border: 1px solid;
-  border-image: linear-gradient(
-      264.81deg,
-      rgba(0, 209, 255, 0.56) 6.82%,
-      #62fc97 91.66%
-    )
-    1 1;
+button img{
+ width: 44px;
+ height: 44px;
+ display: flex;
 }
-
 button span {
   font-family: "Feature Mono";
   font-style: normal;
