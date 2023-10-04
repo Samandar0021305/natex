@@ -9,7 +9,7 @@ yarn-error.log*
 
 /natex-front
 
-
+dist/
 
 # Runtime data
 pids
