@@ -6,7 +6,7 @@
     <AnimatedCustom />
 
       <div class="animate__fadeIn animate__animated header--boox">
-        <nuxt-link to="#natex"
+        <nuxt-link to="/"
           ><img
             src="@/assets/images/main/go_back.svg"
             alt="go back"
@@ -295,7 +295,7 @@ export default {
     left: 40px !important;
     width: 35px;
     height: 35px;
-    top: 3.5rem;
+    top: 3.6rem;
   }
 }
 </style>

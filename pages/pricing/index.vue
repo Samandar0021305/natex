@@ -3,7 +3,7 @@
     <AnimatedCustom />
     <section class="section pb-[50px]">
       <div class="animate__fadeIn animate__animated top-navbar header--boox">
-        <nuxt-link to="#natex"
+        <nuxt-link to="/"
           ><img
             src="@/assets/images/main/go_back.svg"
             alt="go back"
