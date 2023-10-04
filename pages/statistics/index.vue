@@ -376,6 +376,9 @@ ul {
 }
 
 @media (max-width: 568px) {
+  section.main-section{
+    padding: 100px;
+  }
   .content-wrapper {
     margin-top: 10px;
     flex-direction: column;
