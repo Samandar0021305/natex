@@ -181,7 +181,7 @@ main img{
   }
 
   header {
-    margin-top: 20%;
+    /* margin-top: 10%; */
   }
 
 }
@@ -191,7 +191,7 @@ main img{
     left: 40px !important;
     width: 35px;
     height: 35px;
-    top: 3.2rem;
+    top: 2.3rem;
   }
 }
 </style>

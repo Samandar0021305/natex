@@ -212,7 +212,7 @@ export default {
     left: 40px !important;
     width: 35px;
     height: 35px;
-    top: 3.2rem;
+    top: 3.3rem;
   }
 }
 </style>
