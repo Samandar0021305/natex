@@ -281,6 +281,9 @@ export default {
   .content-wrapper p {
     font-size: 13px;
   }
+  section.main-section{
+    padding-bottom: 100px;
+  }
 }
 
 @media (max-width: 400px) {
