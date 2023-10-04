@@ -74,6 +74,10 @@ export default {
       if (container.classList.contains("sidebar-is-open")) {
         container.classList.remove("sidebar-is-open");
       }
+
+      if(this.$route.hash.includes("#")){
+        this.$route.path = "#natex"
+      }
     },
     isActive(param){
        if(this.$route.path.includes(param)){
@@ -82,6 +86,9 @@ export default {
        return false
     }
   },
+  computed:{
+     
+  }
 };
 </script>
 <style scoped>
