@@ -3,12 +3,12 @@
     <AnimatedCustom />
     <section class="section pb-[50px]">
       <div class="animate__fadeIn animate__animated top-navbar header--boox">
-        <nuxt-link to="/"
+        <span @click="goToPrev()"
           ><img
             src="@/assets/images/main/go_back.svg"
             alt="go back"
             class="go_back cursor-pointer"
-        /></nuxt-link>
+        /></span>
         <img
           class="cursor-pointer menu-btn"
           data-nav="_3dScaleRotate"
@@ -115,6 +115,11 @@ export default {
       ),
     };
   },
+  methods:{
+    goToPrev(){
+      this.$router.go(-1)
+    }
+  }, 
   async mounted() {
     await this.$store.dispatch("handleSidebarMenu");
     gsap.from(".pricing-title", {

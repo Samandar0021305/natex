@@ -5,12 +5,12 @@
     >
     <AnimatedCustom />
       <div class="animate__fadeIn animate__animated header--boox">
-        <nuxt-link to="/"
+        <span @click="goToPrev()"
           ><img
             src="@/assets/images/main/go_back.svg"
             alt="go back"
             class="absolute left-20 top-10 go_back cursor-pointer"
-        /></nuxt-link>
+        /></span>
       </div>
       <header class="mx-auto animate__fadeIn header animate__animated mb-4">
         <p class="header-name my-3">
@@ -200,6 +200,11 @@ export default {
       statistics2: "Lorem Ipsum Dolllars".split(""),
     };
   },
+  methods:{
+    goToPrev(){
+      this.$router.go(-1)
+    }
+  }, 
   async mounted() {
     await this.$store.dispatch("handleSidebarMenu");
     gsap.from(".statistics-title",{

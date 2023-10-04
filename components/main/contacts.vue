@@ -3,7 +3,7 @@
     <AnimatedCustom />
     <Header class="mx-auto container px-3 transform-effect" />
     <div
-      class="h-[100vh] w-[100vw] align-middle container mx-auto px-3 flex justify-between items-center main-elements"
+      class="h-[100%] w-[100vw]  container mx-auto  flex justify-between items-center main-elements"
     >
       <Timeline
         class="w-[50%] time_line transform-effect faded_effect_timeline"

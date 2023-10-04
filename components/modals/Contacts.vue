@@ -145,6 +145,10 @@ export default {
   color: white;
   transition: transform 1s ease-in; /* animate when opening/closing */
   overflow-y: scroll; /* enable scrolling for menu container */
+  padding-top: 130px;
+  display: flex;
+  padding-left: 70px;
+  
 }
 
 .disableScroll {
@@ -166,7 +170,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .list-items-li {
@@ -319,12 +323,17 @@ header {
     margin: 0% auto;
   }
   .menu.show{
-    margin-top: -80%;
+    /* margin-top: -80%; */
   }
 }
 
 @media (max-width: 472px) {
-  
+  .menu{
+    padding-top: 0px !important;
+  }
+  .menu ul{
+    margin-top: -30px !important;
+  }
   .bottom-content {
     font-size: 20px;
     width: 90%;
@@ -335,10 +344,7 @@ header {
 }
 
 @media  (max-width:350px) {
-   .menu.show{
-    margin-top: -120% !important;
-   padding-left: 10px; 
-  }
+  
   /*  */
 }
 </style>

@@ -6,12 +6,12 @@
     <AnimatedCustom />
 
       <div class="animate__fadeIn animate__animated header--boox">
-        <nuxt-link to="/"
+        <span @click="goToPrev()"
           ><img
             src="@/assets/images/main/go_back.svg"
             alt="go back"
             class="absolute left-20 top-10 go_back cursor-pointer"
-        /></nuxt-link>
+        /></span>
       </div>
 
       <div class="mx-auto header mb-16 animate__fadeIn animate__animated">
@@ -86,6 +86,11 @@ export default {
       drivers1: "FOR DRIVERS".split(""),
       drivers2: "Are you a Rider?".split(""),
     };
+  },
+  methods:{
+    goToPrev(){
+      this.$router.go(-1)
+    }
   },
   async mounted() {
     await this.$store.dispatch("handleSidebarMenu");

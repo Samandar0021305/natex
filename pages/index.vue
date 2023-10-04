@@ -31,7 +31,6 @@ import ScrollEffect from "~/utils/ScrollEffect.js";
 export default {
   mounted() {
     ScrollEffect();
-    this.$router.push("/#natex")
   },
 };
 </script>

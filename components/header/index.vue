@@ -29,9 +29,9 @@ header {
   z-index: 120 !important;
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:460px) {
    nav div a img{
-    width: 104px;
+    width: 96px;
     height: 19px;
    }
 }
