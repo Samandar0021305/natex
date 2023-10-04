@@ -103,7 +103,9 @@ export default {
     )
     1 1;
 }
-
+main img{
+  transform: scale(1.1);
+}
 .header-name {
   text-align: center;
   font-family: monospace;
