@@ -75,8 +75,11 @@ export default {
         container.classList.remove("sidebar-is-open");
       }
 
-      if(this.$route.hash.includes("#")){
-        this.$route.path = "#natex"
+      if(this.$route.hash.includes("#") && !this.$route.hash.includes("#natex")){
+        // this.$route.
+        // console.log(this.$route);
+        // this.$route.push("#natex")
+        window.location.reload()
       }
     },
     isActive(param){
